@@ -1,0 +1,121 @@
+/* Updated Styles for Better User Experience */
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: clamp(300px, 30%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.place-order-left input {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-order-left input:focus {
+    border-color: #ff6347; /* Tomato */
+    box-shadow: 0 0 4px rgba(255, 99, 71, 0.5);
+}
+
+.place-order-left input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 1rem;
+}
+
+.place-order-left button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff6347; /* Tomato */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-left button:hover {
+    background-color: #e5533c;
+    transform: translateY(-2px);
+}
+
+.place-order-left button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .place-order-left {
+        max-width: 100%;
+    }
+}
+
+.place-order-right {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+  }
+  
+  .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .cart-total-details p {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
